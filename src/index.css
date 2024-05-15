@@ -1,0 +1,114 @@
+/* Định kiểu cho nền mờ khi modal hiển thị */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Đảm bảo modal luôn ở trên các thành phần khác */
+  }
+  
+  /* Định kiểu cho nội dung của modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1001; /* Đảm bảo nội dung modal luôn trên nền mờ */
+  }
+  
+  /* Định kiểu cho nút đóng modal */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Định kiểu cho các nút */
+  button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button:last-of-type {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Thêm hiệu ứng hover cho các nút */
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Định kiểu cho bảng danh sách sinh viên */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Định kiểu cho các ô tìm kiếm và thêm mới */
+  input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button.add-student {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  button.edit {
+    background-color: #FFA500;
+    color: white;
+  }
+  
+  button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .search-input {
+    margin-bottom: 20px;
+  }
+  
